@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5px;
+}
+
+.navbar .logo {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 180px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.navbar .logo span {
+    color: #ffde22;
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 160px;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 0px 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.navbar ul li a:hover {
+    color: #FFD700;
+    transition: 0.6s;
+}
+
+.navbar ::after {
+    content: "";
+    background: url('images/bg.jpg') no-repeat center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -10;
+}
+
+/* .navbar ::before {
+    content: "";
+    background: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -5;
+    opacity: 0.02;
+} */
+
+.intro {
+    color: #fff;
+    width: 350px;
+    position: relative;
+    top: 150px;
+    left: 300px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 250px;
+}
+
+.intro span {
+    color: #FFD700;
+}
+
+.intro p {
+    padding-top: 20px;
+}
+
+.intro a {
+    text-decoration: none;
+    width: 125px;
+    margin-top: 30px;
+    color: #000;
+    background-color: #FFD700;
+    padding: 10px 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.intro a:hover {
+    background-color: rgb(21, 21, 21);
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    box-shadow: 1px 1px 20px 1px rgba(255, 255, 255, 0.3);
+    transition: 0.6s;
+}
+
+.description {
+    position: relative;
+    top: 205px;
+    padding: 0px 50px 50px 40px;
+}
+
+.description .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    padding: 35px 0px;
+    margin: 50px 50px 0px 50px;
+    background-color: #9978c08d;
+    background-color: #fbe566;
+    border-radius: 20px;
+}
+
+.description .container .subcontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.description .container .subcontainer h2 {
+    letter-spacing: 1px;
+    color: #001678;
+}
+
+.description .container .subcontainer p {
+    color: #65350f;
+    letter-spacing: 1px;
+}
+
+.description .container img {
+    width: 190px;
+}
+
+.foot {
+    background-color: rgba(194, 194, 194, 0.589);
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot .social a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(36, 36, 36);
+}
+
+.foot .social a:hover {
+    color: #000;
+}
+
+.foot p {
+    padding: 0px 0px 0px 20px;
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 1210px) {
+    .description .container .subcontainer p {
+        width: 800px;
+    }
+    .description{
+        margin: 20px 0px;
+    }
+}
+
+@media only screen and (max-width:1210px) {
+    .description .container .element {
+        padding: 2px 3px 0px 5px;
+    }
+
+    .description .container {
+        margin: 20px -30px 0px -20px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .description {
+        top: 100px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .intro {
+        flex-wrap: wrap;
+        top: 100px;
+        left: 140px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .intro {
+        width: 280px;
+        top: 100px;
+        left: 100px;
+        justify-content: center;
+    }
+
+    .foot {
+        flex-direction: column;
+        height: 80px;
+    }
+
+    .description .container img {
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .description .container {
+        margin: 20px -40px 0px -30px;
+    }
+}
